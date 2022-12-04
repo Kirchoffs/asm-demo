@@ -5,12 +5,16 @@ section .data
 section .text
     global _start
 _start:
-    mov rax, 1
-    mov rdi, 1
-    mov rsi, msg
-    mov rdx, 13
-    syscall
+    call print_hello
 
     mov rax, 60
     mov rdi, 0
     syscall
+
+print_hello:
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, msg
+    mov rdx, 14
+    syscall
+    ret

@@ -1,7 +1,7 @@
 # asm-demo
 
 ## Prepare
-On CentOS
+On CentOS, install nasm
 ```
 >> sudo dnf --enablerepo=powertools install nasm
 ```
